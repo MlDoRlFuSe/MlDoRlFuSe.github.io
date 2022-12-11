@@ -104,6 +104,7 @@ button{
     box-shadow: 0px 6px 40px 0px;
     background-color: rgba(128,183,179,0.54);
     border-radius: 20px;
+	coursor: pointer;
 
     font-family: Arial;
     padding-left: 30px;
