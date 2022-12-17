@@ -4,6 +4,8 @@
 	border: 0;
     box-sizing: border-box;
 }
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
 
 ul li{list-style: none;}
 
@@ -13,7 +15,9 @@ body{
 }
 
 main{
-    margin: 106px 125px 0px 125px
+    margin: 0 auto;
+    margin-top: 106px;
+    width: 841px;
 }
 
 .bg{
@@ -67,6 +71,9 @@ header h1{
     display: block;
     margin: 0 auto;
     margin-top: 97px;
+}
+
+.text-discr p{
     text-align: left;
     opacity: 0.8;
     font-family: 'Times New Roman';
@@ -74,6 +81,10 @@ header h1{
     line-height: 40px;
     font-weight: 400;
     color: #273d46;
+}
+
+.text-discr p:nth-child(2){
+    margin-top: 63px;
 }
 
 ul{
@@ -107,8 +118,7 @@ ul li:nth-child(3){
 
 ul li:nth-child(4){
     text-decoration: line-through;
-    color: #273d46;
-    opacity: 0.3;
+    color: #b5babd;
 }
 
 ul li:before{
@@ -127,7 +137,8 @@ ul li:before{
     margin-top: 59px;
 }
 
-button{
+a{
+    display: block;
     width: 199px;
     height: 44px;
     box-shadow: 0px 6px 40px 0px;
@@ -137,6 +148,7 @@ button{
 
     font-family: Arial;
     padding-left: 30px;
+    padding-top: 2px;
     text-align-last: left;
     font-size: 14px;
     line-height: 40px;
@@ -146,21 +158,21 @@ button{
     color: #ffffff;
 }
 
-button::after{
+a::after{
     content: '';
     width: 21px;
     height: 14px;
     opacity: 0.8;
     background: url(../img/icon/shape_2_9.png) no-repeat;
     margin-left: 10px;
-    background-position: 0px 2px; 
+    background-position: 0px 3px; 
     display: inline-block;
 }
 
-button:hover{
+a:hover{
     background-color: rgba(3, 83, 83, 0.54);
 }
 
-button:active{
+a:active{
     background-color: rgba(44, 52, 52, 0.54);
 }
