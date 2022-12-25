@@ -1,0 +1,508 @@
+@font-face
+    font-family: 'Akzidenz-Grotesk BQ Condensed'
+    src: url('AkzidenzGroteskBQ-BdCnd.eot')
+    src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-BdCnd.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-BdCnd.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-BdCnd.ttf') format('truetype'), url('../fonts/AkzidenzGroteskBQ-BdCnd.svg#AkzidenzGroteskBQ-BdCnd') format('svg')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Bebas'
+    src: url('Bebas-Regular.eot')
+    src: url('../fonts/Bebas-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Bebas-Regular.woff2') format('woff2'), url('../fonts/Bebas-Regular.woff') format('woff'), url('../fonts/Bebas-Regular.ttf') format('truetype'), url('../fonts/Bebas-Regular.svg#Bebas-Regular') format('svg')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+* 
+    padding: 0
+    margin: 0
+    border: 0
+
+*, *:before, *:after 
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+:focus, :active 
+    outline: none
+
+a:focus, a:active 
+    outline: none
+
+nav, footer, header, aside 
+    display: block
+
+html, body 
+    height: 100%
+    width: 100%
+    font-size: 100%
+    line-height: 1
+    font-size: 14px
+    -ms-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+input, button, textarea 
+    font-family: inherit
+
+input::-ms-clear 
+    display: none
+    
+button 
+    cursor: pointer
+    &::-moz-focus-inner 
+        padding: 0
+        border: 0
+	
+
+a, a:visited 
+    text-decoration: none
+
+a:hover 
+    text-decoration: none
+
+ul li 
+    list-style: none
+
+img 
+    vertical-align: top
+
+h1, h2, h3, h4, h5, h6 
+    font-size: inherit
+    font-weight: 400
+
+body
+    padding-top: 34px
+
+.container
+    width: 880px
+    margin: 0 auto
+
+.header
+    width: 1366px
+    margin: 0 auto
+    display: block
+    height: 175px
+    text-align: center
+    &-left
+        float: left
+        width: 327px
+        &-top
+            text-align: left
+            margin-bottom: 39px
+            p
+                display: inline-block
+                text-align: center
+                font-family: Bebas
+                font-size: 10px
+                line-height: 25px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                width: 19px
+                height: 20px
+                cursor: pointer
+                &:first-child
+                    text-decoration: underline
+                    color: #ffffff
+                    background-color: #000000
+        &-mid
+            text-align: left
+            p
+                margin-right: 46px
+                display: inline-block
+                font-family: Akzidenz-Grotesk BQ Condensed
+                font-size: 15px
+                line-height: 25px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #000000
+                cursor: pointer
+                &:last-child
+                    margin-right: 0
+    &-mid
+        display: inline-block
+        width: 212px
+        &-top
+            font-family: Bebas
+            font-size: 8px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1.0em
+            color: #000000
+        &-mid
+            margin-top: 14px
+            margin-bottom: 23px
+        &-bot
+            font-family: Bebas
+            font-size: 8px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1.0em
+            color: #000000
+    &-right
+        float: right
+        width: 327px
+        &-top
+            text-align: right
+            font-family: Akzidenz-Grotesk BQ Condensed
+            font-size: 15px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            text-decoration: underline
+            color: #000000
+            margin-bottom: 35px
+        &-mid
+            text-align: right
+            p
+                display: inline-block
+                font-family: Akzidenz-Grotesk BQ Condensed
+                font-size: 15px
+                line-height: 25px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #000000
+                margin-right: 47px
+                cursor: pointer
+                &:nth-child(2)
+                    margin-right: 56px
+                &:nth-child(3)
+                    margin-right: 0px
+
+.main
+    height: 425px
+    width: 1366px
+    margin: 0 auto
+    &-image
+        width: 683px
+        float: left
+        img
+            max-width: 100%
+    &-text
+        width: 683px
+        height: 425px
+        float: right
+        padding-left: 59px
+        padding-right: 321px
+        padding-top: 82px
+        text-align: left
+        background-color: #000000
+        h1
+            font-family: Akzidenz-Grotesk BQ Condensed
+            font-size: 50px
+            line-height: 50px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            color: #ffffff
+            margin-bottom: 37px
+        h2
+            font-family: PT Sans
+            font-size: 15px
+            line-height: 25px
+            font-weight: 400
+            color: #999999
+            margin-bottom: 55px
+        &-white
+            width: 155px
+            height: 50px
+            background-color: #ffffff
+            font-family: Bebas
+            font-size: 15px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            color: #000000
+            display: block
+            float: left
+            text-align: center
+            padding-top: 13px
+            cursor: pointer
+        &-black
+            font-family: Bebas
+            font-size: 15px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            color: #fffffe
+            display: block
+            text-align: center
+            padding-top: 13px
+            cursor: pointer
+
+.example
+    width: 1366px
+    margin: 0 auto
+    margin-top: 75px
+    height: 675px   
+    &-wrapper
+        display: block
+    &-corporate
+        display: inline-block
+        width: 24%
+    &-private
+        display: inline-block
+        width: 24%
+    &-wedding
+        display: inline-block
+        width: 24%
+    &-online
+        display: inline-block
+        width: 24%
+    &-image
+        width: 100%
+        margin-bottom: 25px
+    &-name
+        font-family: Akzidenz-Grotesk BQ Condensed
+        text-align: left
+        width: 125px
+        font-size: 25px
+        line-height: 25px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #000000
+        margin-bottom: 36px
+    &-text
+        font-family: PT Sans
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        color: #000000
+        text-align-last: left
+        width: 185px
+        margin-bottom: 32px
+    &-get
+        display: block
+        width: 155px
+        height: 50px
+        background-color: #000000
+
+        padding-top: 12px
+        text-align: center
+        font-family: Bebas
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #ffffff
+        margin-bottom: 29px
+        cursor: pointer
+    &-more
+        font-family: Bebas
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        text-decoration: underline
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #000000
+        cursor: pointer
+
+.why
+    width: 1366px
+    height: 150px
+    margin: 0 auto
+    &-text
+        height: 150px
+        width: 683px
+        float: left
+        font-family: Akzidenz-Grotesk BQ Condensed
+        font-size: 50px
+        line-height: 25px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #ffffff
+        text-align: right
+        padding-right: 61px
+        padding-top: 57px
+        background-color: #000000
+    &-image
+        width: 683px
+        float: right
+        img
+            max-width: 100%
+
+.causes
+    background-color: #ebebeb
+    height: 350px
+    padding-top: 54px
+    &-wrapper
+        display: block
+    &-block
+        &:nth-child(1)
+            width: 49%
+            float: left
+        &:nth-child(2)
+            width: 49%
+            float: right
+        &-box
+            display: block
+            &:nth-child(odd)
+                margin-bottom: 50px
+        &-text
+            display: inline-block
+            width: 300px
+            margin-left: 13px
+    &-image
+        width: 100px
+        height: 100px
+        display: inline-block
+    &-header
+        display: inline-block
+        font-family: Akzidenz-Grotesk BQ Condensed
+        font-size: 25px
+        line-height: 25px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #000000
+        margin-bottom: 28px
+    &-text
+        display: inline-block
+        font-family: PT Sans
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        color: #000000
+
+.sayHello
+    height: 250px
+    padding-top: 82px
+    &-mainText
+        font-family: Akzidenz-Grotesk BQ Condensed
+        font-size: 50px
+        line-height: 25px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.1em
+        color: #000000
+        text-align: left
+        margin-bottom: 32px
+    &-contacts
+        &-left
+            display: block
+            width: 50%
+            float: left
+        &-right
+            display: block
+            width: 50%
+            float: right
+        p
+            display: inline-block
+            font-family: PT Sans
+            font-size: 15px
+            line-height: 25px
+            font-weight: 400
+            color: #000000
+            padding-left: 10px
+        &-icons
+            margin-top: 23px
+            img
+                margin-right: 31px
+                &:last-child
+                    margin-right: 0px
+    img
+        cursor: pointer
+
+.get
+    width: 1366px
+    height: 475px
+    margin: 0 auto
+    &-map
+        width: 683px
+        display: block
+        float: left
+    &-form
+        width: 683px
+        display: block
+        float: right
+        height: 475px
+        background-color: #000000
+        padding-left: 60px
+        padding-top: 54px
+        p
+            font-family: Akzidenz-Grotesk BQ Condensed
+            font-size: 25px
+            line-height: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            color: #ffffff
+            margin-bottom: 28px
+        form
+            width: 374px
+            height: 250px
+            input
+                display: block
+                border: 2px solid #959595
+                background-color: #252525
+                width: 372px
+                height: 50px
+                margin-bottom: 25px
+                padding-left: 20px
+
+                font-family: PT Sans
+                font-size: 15px
+                line-height: 25px
+                font-weight: 400
+                color: #959595
+            textarea
+                display: block
+                border: 2px solid #959595
+                background-color: #252525
+                width: 372px
+                height: 100px
+                padding-left: 20px
+                padding-top: 10px
+
+                font-family: PT Sans
+                font-size: 15px
+                line-height: 25px
+                font-weight: 400
+                color: #959595
+            button
+                width: 155px
+                height: 50px
+                background-color: #ffffff
+                margin-top: 25px
+
+                font-family: Bebas
+                font-size: 15px
+                line-height: 25px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #000000
+                &:hover
+                    transition: 1s
+                    font-size: 20px
+
+.footer
+    height: 126px
+    &-text
+        display: block
+        float: left
+        text-align: center
+        margin-top: 59px
+
+        font-family: PT Sans
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        color: #4d4d4d
+        span
+            text-decoration: underline
+    &-img
+        display: block
+        float: right
+        margin: 0 auto
+        margin-top: 44px
