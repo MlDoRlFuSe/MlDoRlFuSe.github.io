@@ -1,0 +1,327 @@
+.container
+    width: 1110px
+    margin: 0 auto
+    
+.header
+    &__nav
+        height: 50px
+        background: var(--gray, #EFEFEF)
+        ul
+            width: 447px
+            height: 100%
+            margin: 0 auto
+            padding: 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            li
+                a
+                    color: var(--dark, #333)
+                    font-size: 14px
+                    font-family: Roboto
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal      
+                    text-decoration: none
+    &__main
+        height: 120px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        box-sizing: border-box
+    &__img
+        cursor: pointer
+    &__phone
+        display: flex
+        align-items: center
+        a
+            color: #000
+            font-size: 16px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-decoration: none
+    &__button
+        margin-left: 40px
+        width: 170px
+        height: 40px
+        border-radius: 40px
+        border: 2px solid var(--accent, #66C05D)
+        background: #FFF
+        box-sizing: border-box
+        cursor: pointer
+        span
+            display: block
+            margin-top: 10px
+            text-align: center
+            color: #000
+            font-size: 14px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+    &__line
+        width: 100%
+        height: 1px
+        background: #EFEFEF
+    &__products
+        height: 79px
+        ul
+            width: 675px
+            height: 100%
+            margin: 0 auto
+            padding: 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            li
+                a
+                    color: #000
+                    font-size: 16px
+                    font-family: Roboto
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    text-decoration: none
+.main
+    height: 604px
+    background: url(../img/Bg.png) center no-repeat
+    &__text
+        width: 308px
+        padding-top: 192px
+        h1
+            color: #FFF
+            font-size: 48px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin: 0
+        p
+            margin: 0
+            margin-top: 36px
+            color: #FFF
+            font-size: 14px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: 20px
+    &__button
+        margin-top: 46px
+        width: 170px
+        height: 40px
+        padding-top: 10px
+        box-sizing: border-box
+        border-radius: 40px
+        border: 2px solid #FFF
+        background: var(--accent, #66C05D)
+
+        color: #FFF
+        text-align: center
+        font-size: 14px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: 0.7px
+
+.special-offers
+    height: 877px
+    background: var(--gray, #EFEFEF)
+    padding-top: 79px
+    &__header
+        display: flex
+        justify-content: space-between
+        p
+            color: #000
+            font-size: 24px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin: 0
+    &__img
+        margin-top: -11px
+        margin-right: 45px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 14px
+    &-option
+        width: 255px
+        height: 337px
+        background: #FFF
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 25px   
+        p
+            margin-top: 16px
+            margin-bottom: 0
+            width: 195px
+            color: #333
+            text-align: center
+            font-size: 14px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+        span
+            margin-top: 18px
+            color: #000
+            text-align: center
+            font-size: 21px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            letter-spacing: 1.05px
+        &__button
+            width: 130px
+            height: 35px
+            margin-top: 17px
+            padding-top: 8px
+            border-radius: 30px
+            background: var(--accent, #66C05D)
+            box-sizing: border-box
+            cursor: pointer
+
+            color: #FFF
+            text-align: center
+            font-size: 14px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.7px
+    &__promo
+        display: flex
+        justify-content: space-between
+        margin-top: 100px
+
+.promo
+    width: 540px
+    height: 212px
+    background: var(--accent, #66C05D)
+    box-sizing: border-box
+    padding-top: 35px
+    padding-left: 40px
+    padding-right: 45px
+    &:first-child
+        display: flex
+        justify-content: space-between
+    &__text
+        width: 250px
+        input
+            width: 195px
+            height: 31px
+            border-radius: 30px
+            background: #FFF
+            padding-left: 25px
+            &::placeholder
+                color: #C4C4C4
+                text-align: left
+                font-size: 14px
+                font-family: Roboto
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                opacity: 0.8
+    &__caption
+        color: #FFF
+        font-size: 18px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin: 0
+    &__discr
+        margin-top: 21px
+        margin-bottom: 31px
+        color: #FFF
+        font-size: 14px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+    &__wrapper
+        width: 170px
+    &__button
+        width: 170px
+        height: 35px
+        padding-top: 8px
+        border-radius: 30px
+        border: 2px solid #FFF
+        background: var(--accent, #66C05D)
+        box-sizing: border-box
+
+        color: #FFF
+        text-align: center
+        font-size: 14px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+
+.footer
+    &__wrapper
+        height: 120px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__social
+        display: flex
+    &__img
+        width: 45px
+        height: 45px
+        margin-right: 19px
+    &__addres
+        display: block
+        padding-left: 80px
+        color: #000
+        font-size: 14px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+    &__phone
+        display: flex
+        a
+            display: block
+            margin-top: 9px
+            color: #000
+            font-size: 16px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-decoration: none
+    &__button
+        width: 170px
+        height: 40px
+        margin-left: 40px
+        border-radius: 40px
+        border: 2px solid var(--accent, #66C05D)
+        background: #FFF
+        box-sizing: border-box
+        text-align: center
+        span
+            display: block
+            margin-top: 10px
+            text-align: center
+            color: #000
+            font-size: 14px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+    &__conf
+        background: var(--gray, #EFEFEF)
+        p
+            color: var(--828282, #828282)
+            font-size: 12px
+            font-family: Roboto
+            font-style: normal
+            font-weight: 400
+            line-height: normal
