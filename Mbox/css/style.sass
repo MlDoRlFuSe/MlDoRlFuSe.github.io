@@ -1,0 +1,486 @@
+html
+    scroll-behavior: smooth
+    
+body
+    background-color: black
+    
+.container
+    width: 1441px
+    margin: 0 auto
+.header
+    height: 100px
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    padding-top: 15px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__nav
+        width: 425px
+        ul
+            margin-left: 41px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            height: 100%
+        &-item
+            color: #FFF
+            text-align: center
+            font-family: Mulish
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+            opacity: 0.5
+            &_active
+                font-weight: 800
+                opacity: 1
+                &::after
+                    content: ''
+                    display: block
+                    width: 100%
+                    height: 2px
+                    margin-top: 5px
+                    border-radius: 50px
+                    background: var(--brand-grd, linear-gradient(352deg, #26FFF2 0%, #326CFF 100%))
+    &__panel
+        width: 214.812px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        img
+            height: 100%
+            cursor: pointer
+.main
+    height: 764px
+    background: url(../img/main-bg.png) right no-repeat
+    &__wrapper
+        width: 562px
+        padding-top: 122px
+        box-shadow: 100px 0px 100px 0px #000
+    &__content
+        width: 514px
+        h1
+            color: #FFF
+            font-family: Marcellus
+            font-size: 80px
+            font-style: normal
+            font-weight: 400
+            line-height: 70px
+        p
+            color: #C2C2C2
+            font-family: Mulish
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 28px
+    &__buttons
+        display: flex
+        margin-top: 35px
+    &__watch
+        width: 141px
+        height: 50px
+        position: relative
+        margin-right: 30px
+        padding-left: 30px
+        background-image: linear-gradient(352deg, #26FFF2 0%, #326CFF 100%)
+        box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.50)
+        border-radius: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            .main__watch-content
+                transition-duration: 1s
+                transform: scale(1.1)
+        &-content
+            width: 100%
+            color: #FFF
+            font-family: Mulish
+            font-size: 16px
+            font-style: normal
+            font-weight: 800
+            line-height: 20px
+            img
+                margin-right: 16px
+    &__more-inf
+        width: 195px
+        height: 50px
+        background-color: #FFF
+        border-radius: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            span
+                transition-duration: 1s
+                transform: scale(1.1)
+        span
+            color: #323232
+            font-family: Mulish
+            font-size: 16px
+            font-style: normal
+            font-weight: 800
+            line-height: 20px
+
+.info-block
+    display: flex
+    justify-content: left
+    align-items: center
+    width: 400px
+    height: 24px
+    margin-top: 52px
+    margin-bottom: 25px
+    &__year
+        color: #FFF
+        font-family: Mulish
+        font-size: 16px
+        font-style: normal
+        font-weight: 800
+        line-height: 10px
+    &__age
+        margin-left: 20px
+        width: 59.754px
+        height: 100%
+        border: 1.5px solid #26afff
+        border-radius: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+            color: #FFF
+            font-family: Mulish
+            font-size: 16px
+            font-style: normal
+            font-weight: 800
+            line-height: 12px
+    &__time
+        margin-left: 18px
+        color: #FFF
+        font-family: Mulish
+        font-size: 16px
+        font-style: normal
+        font-weight: 800
+        line-height: 10px
+    &__rait
+        display: flex
+        align-items: center
+        margin-left: 58px
+        color: #FFF
+        font-family: Mulish
+        font-size: 16px
+        font-style: normal
+        font-weight: 800
+        line-height: 10px
+        img
+            margin-left: 13px
+
+.trending
+    padding-top: 60px
+    &__movies
+        margin-top: 60px
+    &__header
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        cursor: pointer
+        h2
+            margin-left: 11px
+            color: #FFF
+            font-family: Mulish
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 206px
+        height: 309px
+        border-radius: 20px
+        cursor: pointer
+        &:hover
+            transition-duration: 0.3s
+            box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.50)
+    &__button
+        margin-top: 55px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 141px
+        height: 50px
+        border-radius: 50px
+        background-image: var(--brand-grd, linear-gradient(352deg, #26FFF2 0%, #326CFF 100%))
+        box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.50)
+        cursor: pointer
+        &:hover
+            span
+                transition-duration: 1s
+                transform: scale(1.1)
+        span
+            color: #FFF
+            font-family: Mulish
+            font-size: 16px
+            font-style: normal
+            font-weight: 800
+            line-height: 20px
+
+.popular
+    padding-top: 100px
+    &__header
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        cursor: pointer
+        h2
+            margin-left: 11px
+            color: #FFF
+            font-family: Mulish
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+    &__actors
+        margin-top: 43px  
+
+.genres
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        span
+            margin-top: 8px
+            color: #FFF
+            text-align: center
+            font-family: Mulish
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+    &__romance
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(136deg, #FD093F 0%, #F383F1 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__drama
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(143deg, #0FFFDA 0%, #3CDB77 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__historical
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(136deg, #B936FF 0%, #57DEDA 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__action
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(136deg, #FD093F 0%, #FB1378 0.01%, #FCCB1A 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__sci-fi
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(136deg, #FF6472 0%, #FDA75D 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__horror
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(137deg, #13547A 0%, #80D0C7 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__comedy
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(137deg, #FFF77B 0%, #FFBF42 100%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+    &__documentary
+        margin-bottom: 27px
+        width: 340px
+        height: 198px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 20px
+        background: linear-gradient(136deg, #1FA2FF 0%, #1FA2FF 0.01%, #1F535C 97.40%)
+        &:hover
+            .genres__img,span
+                transition-duration: 1s
+                transform: scale(1.1)
+
+.actors
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &:hover
+            transition-duration: 1s
+            transform: scale(1.1)
+        span
+            margin-top: 20px
+            color: #FFF
+            text-align: center
+            font-family: Mulish
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+
+.news
+    padding-top: 76px
+    padding-bottom: 121px
+    &__register
+        width: 1224px
+        height: 270px
+        margin: 0 auto
+        margin-top: 106px
+        padding-left: 47px
+        background: url(../img/register.png) center no-repeat
+        display: flex
+        align-items: center
+        span
+            color: #FFF
+            font-family: Mulish
+            font-size: 64px
+            font-style: normal
+            font-weight: 700
+            line-height: 100%
+            text-transform: capitalize
+    &__button
+        width: 141px
+        height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50px
+        margin-left: 82px
+        background-image: var(--brand-grd, linear-gradient(352deg, #26FFF2 0%, #326CFF 100%))
+        box-shadow: drop-shadow(0px 4px 50px rgba(50, 108, 255, 0.50))
+        &:hover
+            span
+                transition-duration: 1s
+                transform: scale(1.1)
+        span
+            font-size: 16px
+            font-weight: 800
+            line-height: 20px
+            text-transform: none
+
+.footer
+    height: 280px
+    background: #101012
+    padding-top: 70px
+    &__items-1
+        width: 194px
+        display: flex
+        flex-direction: column
+        justify-content: left
+        margin-right: 52px
+    &__items-2
+        width: 152px
+        display: flex
+        flex-direction: column
+        justify-content: left
+        margin-right: 52px
+    &__items-3
+        width: 170px
+        display: flex
+        flex-direction: column
+        justify-content: left
+        margin-right: 52px
+    &__items-4
+        width: 197px
+        display: flex
+        flex-direction: column
+        justify-content: left
+    &__img
+        width: 157px
+        height: 70px
+        margin-left: 110px
+        margin-right: 84px
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__nav
+        display: flex
+        flex-wrap: wrap
+        width: 1000px
+    &__item
+        margin-bottom: 20px
+        color: #C2C2C2
+        font-family: Mulish
+        font-size: 18px
+        font-style: normal
+        font-weight: 600
+        line-height: 20px
+        cursor: pointer
+        &:hover
+            transition-duration: 1s
+            color: #ffffff
