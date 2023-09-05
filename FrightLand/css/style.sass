@@ -1,0 +1,1055 @@
+@font-face 
+    font-family: Frightmare
+    src: url(../font/Frightmare-Demo.otf)
+
+body
+    background: #160D3B
+
+header
+    margin-top: 46.23px
+    nav
+        img
+            width: 40px
+            height: 40px
+            cursor: pointer
+    a
+        color: #DBDEFF
+        font-family: Roboto Slab
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -0.36px
+        text-decoration: none
+
+.login
+    img
+        margin-left: 8px
+    &__sign-in
+        width: 128px
+        height: 51px
+        border-radius: 16px
+        border: 2px solid rgba(79, 30, 228, 1)
+        margin-right: 12px
+        margin-left: 48px
+        cursor: pointer
+        a
+            color: #EBEDFF
+    &__become-a-host
+        width: 182px
+        height: 51px
+        border-radius: 16px
+        background-image: linear-gradient(135deg, #EC56C9 0%, #9F2A7E 100%)
+        box-shadow: 0px 5px 50px 0px rgba(192, 57, 161, 0.25), 3px 2px 0px 0px #E67ACD inset, -2px -3px 0px 0px #802366 inset
+        cursor: pointer
+        a
+            color: #FCEBF9
+
+.main-page
+    background: url(../img/main-bg.png) top no-repeat
+    height: 1030px
+    padding-top: 177px
+    img
+        margin: 24px
+        border-radius: 32px
+    h2
+        color: #FFF
+        font-family: Frightmare
+        font-size: 32px
+        font-style: normal
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -0.64px
+        text-transform: uppercase
+    p
+        color: #DBDEFF
+        font-family: Roboto Slab
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.28px
+        span
+            margin-right: 8px
+            color: #DC59C0
+            font-family: Roboto Slab
+            font-size: 24px
+            font-style: normal
+            font-weight: 600
+            line-height: 100%
+            letter-spacing: -0.48px
+            text-transform: uppercase
+
+.old-bedroom
+    &__wrapper
+        width: 465px
+        height: 184px
+        margin: 0 auto
+        position: relative
+        border-radius: 48px
+        background: #0B071E
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            min-width: 140.468px
+            height: 142.02px
+            right: -20px
+            top: 180px
+            background: url(../img/main-arrow-left.png) center no-repeat    
+    &__text
+        width: 249px
+        padding-top: 44px
+        p
+            margin-top: -6px
+        &::after
+            content: ""
+            display: block
+            position: relative
+            width: 40px
+            height: 8px
+            right: 110px
+            bottom: 40px
+            background: url(../icon/eclip-3.png) center no-repeat
+    &__rate
+        width: 66px
+        height: 34px
+        margin-bottom: 15px
+        margin-left: 92px
+        padding-top: 10px
+        border-radius: 99px
+        border-top: 1px solid rgba(255, 255, 255, 0.50)
+        border-left: 1px solid rgba(255, 255, 255, 0.50)
+        background: #BDC1FF
+        p
+            padding-top: 2px
+            color: #211357
+            margin-bottom: 0
+        img
+            margin: 0
+            margin-right: 3px
+            width: 12px
+            height: 12px
+
+.coze-space
+    &__wrapper
+        width: 465px
+        height: 184px
+        position: relative
+        border-radius: 48px
+        background: #0B071E
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            min-width: 140.468px
+            height: 142.02px
+            right: 380px
+            top: 150px
+            background: url(../img/main-arrow-right.png) center no-repeat    
+    &__text
+        padding-top: 34px
+        width: 256px
+        p
+            padding-top: 2px
+            margin-top: -6px
+        &::after
+            content: ""
+            display: block
+            position: relative
+            width: 40px
+            height: 8px
+            right: 110px
+            bottom: 30px
+            background: url(../icon/eclip-3.png) center no-repeat
+    &__rate
+        width: 66px
+        height: 34px
+        padding-top: 10px
+        margin-left: 92px
+        border-radius: 99px
+        border-top: 1px solid rgba(255, 255, 255, 0.50)
+        border-left: 1px solid rgba(255, 255, 255, 0.50)
+        background: #BDC1FF
+        p
+            color: #211357
+            margin-bottom: 0
+        img
+            margin: 0
+            margin-right: 8px
+            width: 12px
+            height: 12px
+
+.form
+    width: 100%
+    height: 150px
+    margin-top: 211px
+    border-radius: 48px
+    border: 10px solid #654AFF
+    position: relative
+    input
+        border-radius: 15.049px
+        border: 1.411px solid rgba(189, 193, 255, 0.50)
+        background: #FFF
+        height: 60px
+
+
+        color: #160D3B
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.32px
+    p
+        margin-bottom: 8px
+        color: #BDC1FF80
+        font-size: 16px
+        letter-spacing: -0.32px
+    img
+        margin: 0
+        border-radius: 0
+    &::after
+        content: ""
+        z-index: -1
+        display: inline-block
+        position: absolute
+        width: 1386px
+        height: 46.595px
+        right: -50px
+        bottom: -40px
+        background: url(../img/search_bot.png) center no-repeat
+    &::before
+        content: ""
+        display: inline-block
+        position: absolute
+        width: 174px
+        height: 85px
+        left: 215px
+        bottom: 70px
+        background: url(../img/search-brick.png) center no-repeat
+    &__chose
+        width: 1190px
+        height: 100%
+        border-radius: 48px 16px 16px 48px
+        border-top: 3px solid #382499
+        border-left: 3px solid #382499
+        background: #0B071E
+        &::after
+            content: ""
+            display: inline-block
+            position: absolute
+            width: 89px
+            height: 204px
+            left: -46px
+            bottom: -40px
+            background: url(../img/search_left.png) center no-repeat
+        &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            width: 174px
+            height: 85px
+            left: 205px
+            bottom: 105px
+            background: url(../img/search_top.png) center no-repeat
+    &__button
+        width: 220px
+        height: 100%
+        border-radius: 16px 48px 48px 16px
+        border-top: 3px solid #382499
+        border-left: 1px solid #382499
+        background: #0B071E
+        &-wrapper
+            width: 153px
+            height: 97px
+            border-radius: 16px
+            background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.00) 5.31%, rgba(255, 255, 255, 0.15) 5.72%, rgba(255, 255, 255, 0.13) 16.15%, rgba(255, 255, 255, 0.00) 16.16%), linear-gradient(135deg, #FFB311 0%, #E59013 100%)
+            box-shadow: 5px 3px 0px 0px rgba(249, 204, 113, 0.75) inset, -2px -3px 0px 0px #CD861A inset
+            p
+                color: #FFF
+                text-align: center
+                font-family: Roboto Slab
+                font-size: 27px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                letter-spacing: -0.54px
+                opacity: 1
+        &::after
+            content: ""
+            display: inline-block
+            position: absolute
+            width: 91px
+            height: 185px
+            right: -45px
+            bottom: -20px
+            background: url(../img/search-right.png) center no-repeat
+        &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            width: 89px
+            height: 263px
+            left: 1045px
+            bottom: -70px
+            background: url(../img/search-mid.png) center no-repeat
+    &__location
+        margin-left: 20px
+        margin-right: 8px
+        p
+            &::after
+                content: ""
+                display: inline-block
+                position: absolute
+                width: 23px
+                height: 23px
+                left: 40px
+                bottom: 40px
+                opacity: 1
+                background: url(../icon/location.png) center no-repeat
+        input
+            width: 494px
+            padding-left: 51px
+    &__date
+        p
+            &::after
+                content: ""
+                display: inline-block
+                position: absolute
+                width: 24px
+                height: 24px
+                left: 545px
+                bottom: 40px
+                background: url(../icon/form-date.png) center no-repeat
+        input
+            width: 275px
+            padding-left: 52px
+            &::placeholder
+                opacity: 0.5
+    &__people
+        margin-left: 8px
+        margin-right: 8px
+        p
+            &::after
+                content: ""
+                display: inline-block
+                position: absolute
+                width: 9px
+                height: 9px
+                left: 850px
+                bottom: 40px
+                background: url(../icon/arrow-down.png) center no-repeat
+            &::before
+                content: ""
+                display: inline-block
+                position: absolute
+                width: 9px
+                height: 9px
+                left: 850px
+                bottom: 55px
+                background: url(../icon/arrow-up.png) center no-repeat
+        input
+            width: 77px
+            padding-left: 20px
+            &::placeholder
+                opacity: 0.5
+    &__img
+        width: 40px
+        height: 40px 
+    &__level
+        &-chose
+            width: 60px
+            height: 60px
+            &_active
+                border-radius: 16px
+                border: 3px solid #654AFF
+                background: #0B071E
+                box-shadow: 2px 2px 2px 0px #000
+
+.popular-lessors
+    height: 991px
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        width: 272px
+        height: 103px
+        top: 331px
+        left: 0px
+        background: url(../img/pop-left.png) center no-repeat
+    &::before 
+        content: ""
+        position: absolute
+        width: 291px
+        height: 120px
+        top: 431px
+        right: 0px
+        background: url(../img/pop-right.png) center no-repeat
+    &__wrapper
+        margin-top: 80px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 32px
+            height: 32px
+            top: 160px
+            left: -30px
+            background: url(../icon/arrow-left.png) center no-repeat
+        &::before 
+            content: ""
+            position: absolute
+            width: 32px
+            height: 32px
+            top: 160px
+            right: -30px
+            background: url(../icon/arrow-right.png) center no-repeat
+    &-chose
+        &__img
+            width: 298.5px
+            height: 330.5px
+            margin-bottom: 72px
+            img
+                margin: 0 auto
+        &__name
+            color: #FFF
+            text-align: center
+            font-family: Frightmare
+            font-size: 48px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -0.96px
+            text-transform: uppercase
+            margin-bottom: 11.5px
+        &__detail
+            p
+                color: #DBDEFF80
+                text-align: center
+                font-family: Roboto Slab
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: -0.36px
+            img
+                width: 24px
+                height: 24px
+    &-footer
+        img
+            margin-left: 8px
+        a
+            color: #FCEBF9
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+            text-decoration: none
+        &__text
+            margin: 0 auto
+            margin-top: 80px
+            margin-bottom: 32px
+            width: 373px
+            color: #AAA9CE
+            text-align: center
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: -0.32px
+        
+.dead-will-come
+    height: 962px
+    padding-top: 150px
+    background: url(../img/tom-bg.png) center no-repeat
+    p
+        color: #DBDEFF
+        text-align: center
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.32px
+        opacity: 0.75
+    h2
+        margin-top: 40px
+        margin-bottom: 16px
+        color: #FFF
+        text-align: center
+        font-family: Frightmare
+        font-size: 64px
+        font-style: normal
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -1.28px
+        text-transform: uppercase
+    h3
+        padding-top: 367px
+        text-align: center
+        color: #FFF
+        font-family: Frightmare
+        font-size: 32px
+        font-style: normal
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -0.64px
+        text-transform: uppercase
+    &__wrapper
+        margin: 0 auto
+        position: relative
+        padding: 32px
+        width: 1231px
+        height: 612px
+        border-radius: 56px
+        background: #0B071E
+        &::after
+            content: ""
+            position: absolute
+            width: 96px
+            height: 41px
+            bottom: 0
+            left: 180px
+            background: url(../img/Bricks.png) center no-repeat
+    &-text
+        padding-top: 40px
+    &-img
+        &__video
+            width: 330px
+            border-radius: 32px
+            background: url(../img/video.png) center no-repeat
+        &__back
+            width: 330px
+            height: 100%
+            border-radius: 32px
+            background-image: linear-gradient(180deg, rgba(11, 7, 30, 0.00) 0%, #0B071E 100%)
+        &__text
+            width: 266px
+            margin: 0 auto
+            p
+                text-align: left
+        &__footer
+            a
+                text-decoration: none
+                color: #E4B02A
+                font-family: Roboto Slab
+                font-size: 20px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                letter-spacing: -0.4px
+                margin-left: 8px
+    &__buttons
+        margin-top: 73px
+        a
+            text-decoration: none
+            color: #FCEBF9
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+        img
+            margin-left: 8px
+        div:last-child
+            margin: 0
+            margin-left: 12px
+            a
+                color: #EBEDFF
+
+.guests-love
+    min-height: 944px
+    &-card
+        width: 300px
+        margin: 15px
+        height: 542px
+        padding: 32px
+        border-radius: 48px
+        background: #0B071E
+        img
+            width: 240px
+            height: 266px
+            border-radius: 32px
+        p
+            height: 80px
+            margin-top: 41px
+            margin-bottom: 32px
+            color: #FFF
+            font-family: Frightmare
+            font-size: 40px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -0.8px
+            text-transform: uppercase
+        &__footer
+            position: relative
+            p
+                height: 18px
+                margin: 0
+                margin-bottom: 8px
+                color: #DBDEFF
+                font-family: Roboto Slab
+                text-align: center
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: -0.28px
+                text-transform: none
+                opacity: 0.75
+            &::before
+                content: ""
+                position: absolute
+                width: 40px
+                height: 8px
+                top: -180px
+                left: 110px
+                background: url(../icon/eclip-3.png) center no-repeat
+        &__visitors
+            position: relative
+            img
+                position: absolute
+                width: 32px
+                height: 32px
+                border-radius: 0
+                &:nth-child(2)
+                    left: 18px
+                &:nth-child(3)
+                    left: 36px
+                &:nth-child(4)
+                    left: 53px
+        &__reviews
+            img
+                width: 16px
+                height: 16px
+                border-radius: 0
+    &-wrapper
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 47px
+            height: 46.5px
+            right: -30px
+            bottom: 20px
+            z-index: -1
+            background: url(../icon/guest-bot.png) center no-repeat
+        &::before
+            content: ""
+            position: absolute
+            width: 68.5px
+            height: 67.5px
+            left: 0px
+            top: 50px
+            background: url(../icon/guest-top.png) center no-repeat
+                
+.team
+    position: relative
+    p
+        color: #DBDEFF
+        text-align: center
+        font-family: Roboto Slab
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.4px
+    &__img
+        width: 896px
+        margin: 0 auto
+        margin-top: 32px
+        margin-bottom: 131px
+        
+.night-movies
+    height: 859px
+    padding-top: 100px
+    background: url(../img/horror-bg.png) center no-repeat
+    &__img
+        width: 1043px
+        height: 732px
+    &__wrapper
+        width: 480px
+        margin-top: 150px
+        margin-left: 52px
+        a
+            text-decoration: none
+            color: #FCEBF9
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+
+.choose
+    margin-top: 200px
+    height: 1080px
+    background: url(../img/choose-bg.png) center no-repeat
+    a
+        color: #FCEBF9
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -0.32px
+        text-decoration: none
+    &__img
+        margin-top: 71px
+        &-wrapper
+            width: 266px
+    &__progress
+        width: 900px
+        margin: 0 auto
+        margin-top: 75px
+        height: 29px
+        background-color: #0B071E
+        border-radius: 99px        
+    progress
+        width: 98.5%
+        height: 18px
+        border-radius: 16px
+        margin: 5px 10px
+        &::-webkit-progress-bar
+            background: #0B071E
+        &::-webkit-progress-value
+            border-radius: 16px
+            background: linear-gradient(96deg, #EC56C9 0%, #9F2A7E 100%)
+            box-shadow: 0px 5px 50px 0px rgba(192, 57, 161, 0.25), 3px 2px 0px 0px #E67ACD inset, -2px -3px 0px 0px #802366 inset
+    &__text
+        margin-top: 67px
+        margin-bottom: 80px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 40px
+            height: 50px
+            top: -100px
+            left: 627px
+            background: url(../icon/progress.png) center no-repeat
+        h3
+            color: #FFF
+            text-align: center
+            font-family: Frightmare
+            font-size: 32px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -0.64px
+            text-transform: uppercase
+        p
+            color: #DBDEFF
+            text-align: center
+            font-family: Roboto Slab
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: -0.28px
+            opacity: 0.75
+        &-wrapper
+            width: 266px
+            position: relative
+            &_active
+                width: 266px
+                position: relative     
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 2px
+                    height: 23px
+                    top: -50px
+                    left: 130px
+                    background: #BDC1FF
+            &::after
+                content: ""
+                position: absolute
+                width: 2px
+                height: 23px
+                top: -50px
+                left: 130px
+                opacity: 0.25
+                background: #BDC1FF
+
+.want-a-better
+    width: 100%
+    height: 900px
+    padding-top: 150px
+    &__left
+        width: 100%
+        height: 602px
+        background: #160D3B
+    &__mid
+        min-width: 1320px
+        height: 602px
+        background: #0B071E
+        border-radius: 56px
+    &__right
+        width: 100%
+        height: 602px
+        background: #160D3B
+    &__text
+        min-width: 413px
+        margin-top: 201px
+        margin-left: 92px
+        h3
+            color: #FFF
+            text-align: center
+            font-family: Frightmare
+            font-size: 64px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -1.28px
+            text-transform: uppercase
+        p
+            margin: 0 auto
+            margin-top: 16px
+            margin-bottom: 73px
+            width: 279px
+            color: #DBDEFF
+            text-align: center
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: -0.32px
+            opacity: 0.75
+        a
+            color: #EBEDFF
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+            text-decoration: none
+    &__shop
+        width: 100%
+        position: relative
+        margin-top: 80px
+        overflow-x: auto
+
+.pot
+    position: absolute
+    width: 457px
+    height: 202px
+    margin-right: 30px
+    padding: 24px
+    border-radius: 48px
+    background: #110B2D
+    &__img
+        width: 136px
+        height: 136px
+        margin-right: 24px
+    &__text
+        h4
+            color: #FFF
+            font-family: Frightmare
+            font-size: 40px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -0.8px
+            text-transform: uppercase
+        p
+            color: #DBDEFF
+            font-family: Roboto Slab
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: -0.28px
+            opacity: 0.75
+            margin-bottom: 12px
+    &__footer
+        p
+            margin: 0
+        span
+            margin-right: 8px
+            color: #DC59C0
+            font-family: Roboto Slab
+            font-size: 24px
+            font-style: normal
+            font-weight: 600
+            line-height: 100%
+            letter-spacing: -0.48px
+            text-transform: uppercase
+    &__bye
+        width: 54px
+        height: 54px
+        border-radius: 16px
+        background: linear-gradient(96deg, #EC56C9 0%, #9F2A7E 100%)
+        box-shadow: 0px 5px 50px 0px rgba(192, 57, 161, 0.25), 3px 2px 0px 0px #E67ACD inset, -2px -3px 0px 0px #802366 inset
+
+.see-our
+    height: 1000px
+    background: url(../img/footer-bg.png) bottom no-repeat
+    &__img
+        width: 630.5px
+        height: 564px
+    &__text
+        width: 545.749px
+    
+    a
+        color: #FCEBF9
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -0.32px
+        text-decoration: none
+
+.feed-back
+    width: 457px
+    height: 182px
+    padding: 24px
+    border-radius: 0px 48px 48px 48px
+    background: #110B2D
+    p
+        margin-bottom: 24px
+        color: #DBDEFF
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 150%
+        letter-spacing: -0.32px
+    &__author
+        img
+            width: 40px
+            height: 40px
+            margin-right: 12px
+        p
+            margin: 0
+            width: 91px
+            font-size: 14px
+            line-height: normal
+            letter-spacing: -0.28px
+            opacity: 0.75
+    &__stars
+        p
+            margin: 0
+            font-size: 14px
+            line-height: normal
+            letter-spacing: -0.28px
+            opacity: 0.75
+        img
+            width: 16px
+            height: 16px
+
+.footer
+    height: 808px
+    padding-top: 96px
+    background: #0B071E
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        width: 191px
+        height: 70px
+        top: -50px
+        left: 451px
+        background: url(../img/footer-top.png) center no-repeat
+    &::before
+        content: ""
+        position: absolute
+        width: 201px
+        height: 93px
+        top: -58px
+        right: 431px
+        background: url(../img/Pumpkins.png) center no-repeat
+    &__logo
+        width: 178px
+        margin: 0 auto
+        img
+            width: 178px
+            height: 92px
+    &__wrapper
+        width: 927px
+        margin: 0 auto
+        margin-top: 72px
+        margin-bottom: 64px
+    &__nav
+        height: 233px
+        h3
+            margin-bottom: 32px
+            color: #FFF
+            font-family: Frightmare
+            font-size: 32px
+            font-style: normal
+            font-weight: 400
+            line-height: 100%
+            letter-spacing: -0.64px
+            text-transform: uppercase
+        a
+            margin-bottom: 16px
+            color: #DBDEFF
+            text-align: center
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+            text-decoration: none
+    &__line
+        width: 1236px
+        height: 16px
+        margin: 0 auto
+        margin-bottom: 72px
+        background: url(../img/Divider.png) center no-repeat
+    &__button
+        a
+            color: #EBEDFF
+            font-family: Roboto Slab
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: -0.32px
+            text-decoration: none
+
+.header-section
+    &__header
+        color: #C039A1
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 600
+        line-height: 100%
+        letter-spacing: -0.32px
+        text-transform: uppercase
+    &__body
+        margin-top: 24px
+        margin-bottom: 16px
+        color: #FFF
+        text-align: center
+        font-family: Frightmare
+        font-size: 72px
+        font-style: normal
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -1.44px
+        text-transform: uppercase
+    &__footer
+        width: 373px
+        margin: 0 auto
+        color: #DBDEFF
+        text-align: center
+        font-family: Roboto Slab
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.32px
+        opacity: 0.75
