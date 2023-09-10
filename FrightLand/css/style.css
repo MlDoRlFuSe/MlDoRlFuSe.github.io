@@ -23,6 +23,10 @@ header a {
   line-height: normal;
   letter-spacing: -0.36px;
   text-decoration: none;
+  transition: 0.5s;
+}
+header a:hover {
+  color: rgb(79, 30, 228);
 }
 
 .login img {
@@ -36,9 +40,17 @@ header a {
   margin-right: 12px;
   margin-left: 48px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 .login__sign-in a {
   color: #EBEDFF;
+}
+.login__sign-in a:hover {
+  color: #EBEDFF;
+}
+.login__sign-in:hover {
+  background-color: rgb(79, 30, 228);
 }
 .login__become-a-host {
   width: 182px;
@@ -47,9 +59,17 @@ header a {
   background-image: linear-gradient(135deg, #EC56C9 0%, #9F2A7E 100%);
   box-shadow: 0px 5px 50px 0px rgba(192, 57, 161, 0.25), 3px 2px 0px 0px #E67ACD inset, -2px -3px 0px 0px #802366 inset;
   cursor: pointer;
+  transition-property: background-image;
+  transition-duration: 1s;
 }
 .login__become-a-host a {
   color: #FCEBF9;
+}
+.login__become-a-host a:hover {
+  color: #FCEBF9;
+}
+.login__become-a-host:hover {
+  background-image: linear-gradient(135deg, #EC56C9 100%, #9F2A7E 0%);
 }
 
 .main-page {
@@ -92,6 +112,10 @@ header a {
   text-transform: uppercase;
 }
 
+.old-bedroom {
+  cursor: pointer;
+  transition: 2s;
+}
 .old-bedroom__wrapper {
   width: 465px;
   height: 184px;
@@ -108,6 +132,7 @@ header a {
   height: 142.02px;
   right: -20px;
   top: 180px;
+  transition: 2s;
   background: url(../img/main-arrow-left.png) center no-repeat;
 }
 .old-bedroom__text {
@@ -149,7 +174,18 @@ header a {
   width: 12px;
   height: 12px;
 }
+.old-bedroom:hover {
+  transform: scale(1.2);
+}
+.old-bedroom:hover .old-bedroom__wrapper::after {
+  transform: translateX(-50px);
+}
 
+.coze-space {
+  cursor: pointer;
+  transition: 2s;
+  transition-property: transform;
+}
 .coze-space__wrapper {
   width: 465px;
   height: 184px;
@@ -165,6 +201,7 @@ header a {
   height: 142.02px;
   right: 380px;
   top: 150px;
+  transition: 2s;
   background: url(../img/main-arrow-right.png) center no-repeat;
 }
 .coze-space__text {
@@ -204,6 +241,12 @@ header a {
   margin-right: 8px;
   width: 12px;
   height: 12px;
+}
+.coze-space:hover {
+  transform: scale(1.2);
+}
+.coze-space:hover .coze-space__wrapper::after {
+  transform: translateX(50px);
 }
 
 .form {
@@ -295,6 +338,7 @@ header a {
   background: #0B071E;
 }
 .form__button-wrapper {
+  cursor: pointer;
   width: 153px;
   height: 97px;
   border-radius: 16px;
@@ -311,6 +355,11 @@ header a {
   line-height: normal;
   letter-spacing: -0.54px;
   opacity: 1;
+  transition: 1s;
+  transition-property: color;
+}
+.form__button-wrapper:hover p {
+  color: black;
 }
 .form__button::after {
   content: "";
@@ -337,6 +386,7 @@ header a {
   margin-right: 8px;
 }
 .form__location p::after {
+  cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
@@ -352,6 +402,7 @@ header a {
   padding-left: 51px;
 }
 .form__date p::after {
+  cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
@@ -376,6 +427,7 @@ header a {
   margin-right: 8px;
 }
 .form__people p::after {
+  cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
@@ -386,6 +438,7 @@ header a {
   background: url(../icon/arrow-down.png) center no-repeat;
 }
 .form__people p::before {
+  cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
@@ -447,6 +500,7 @@ header a {
   position: relative;
 }
 .popular-lessors__wrapper::after {
+  cursor: pointer;
   content: "";
   position: absolute;
   width: 32px;
@@ -456,6 +510,7 @@ header a {
   background: url(../icon/arrow-left.png) center no-repeat;
 }
 .popular-lessors__wrapper::before {
+  cursor: pointer;
   content: "";
   position: absolute;
   width: 32px;
@@ -463,6 +518,42 @@ header a {
   top: 160px;
   right: -30px;
   background: url(../icon/arrow-right.png) center no-repeat;
+}
+.popular-lessors-chose {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.popular-lessors-chose:hover .popular-lessors-chose__hidden {
+  opacity: 1;
+}
+.popular-lessors-chose:hover .popular-lessors-chose__detail {
+  opacity: 0;
+}
+.popular-lessors-chose__hidden {
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+  width: 201px;
+  height: 525px;
+  left: 63px;
+  background-color: #0B071E;
+  border-radius: 48px;
+  z-index: -1;
+}
+.popular-lessors-chose__hidden a {
+  color: #DBDEFF;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-decoration: none;
+}
+.popular-lessors-chose__hidden .login__sign-in {
+  margin: 0 auto;
+  margin-bottom: 17px;
 }
 .popular-lessors-chose__img {
   width: 298.5px;
@@ -645,12 +736,17 @@ header a {
   min-height: 944px;
 }
 .guests-love-card {
+  cursor: pointer;
   width: 300px;
   margin: 15px;
   height: 542px;
   padding: 32px;
   border-radius: 48px;
   background: #0B071E;
+  transition: 2s;
+}
+.guests-love-card:hover {
+  transform: scale(1.1);
 }
 .guests-love-card img {
   width: 240px;
@@ -765,6 +861,8 @@ header a {
 
 .night-movies {
   height: 859px;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 100px;
   background: url(../img/horror-bg.png) center no-repeat;
 }
@@ -805,6 +903,9 @@ header a {
 }
 .choose__img {
   margin-top: 71px;
+}
+.choose__img img {
+  cursor: pointer;
 }
 .choose__img-wrapper {
   width: 266px;
@@ -962,10 +1063,16 @@ header a {
   position: relative;
   margin-top: 80px;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.want-a-better__shop::-webkit-scrollbar {
+  display: none;
 }
 
 .pot {
   position: absolute;
+  cursor: pointer;
   width: 457px;
   height: 202px;
   margin-right: 30px;
@@ -1023,7 +1130,7 @@ header a {
 
 .see-our {
   height: 1000px;
-  background: url(../img/Footer-bg.png) bottom no-repeat;
+  background: url(../img/footer-bg.png) bottom no-repeat;
 }
 .see-our__img {
   width: 630.5px;
@@ -1044,11 +1151,16 @@ header a {
 }
 
 .feed-back {
+  cursor: pointer;
   width: 457px;
   height: 182px;
   padding: 24px;
   border-radius: 0px 48px 48px 48px;
   background: #110B2D;
+  transition: 1s;
+}
+.feed-back:hover {
+  transform: scale(1.1);
 }
 .feed-back p {
   margin-bottom: 24px;
@@ -1148,6 +1260,10 @@ header a {
   line-height: normal;
   letter-spacing: -0.32px;
   text-decoration: none;
+  transition: 0.5s;
+}
+.footer__nav a:hover {
+  color: rgb(79, 30, 228);
 }
 .footer__line {
   width: 1236px;
