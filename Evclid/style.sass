@@ -1,0 +1,397 @@
+*:active, *:focus
+    outline: none
+
+body
+    background: #FFF
+
+h1
+    width: 837px
+    color: #FFF
+    font-family: Montserrat
+    font-size: 70px
+    font-style: normal
+    font-weight: 800
+    line-height: normal
+    margin-bottom: 24px
+    
+.container
+    max-width: 1770px
+    margin: 0 auto
+
+.button
+    display: flex
+    width: 280px
+    height: 78px
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    border-radius: 16px
+    background: #F90
+    cursor: pointer
+    &-contour
+        background-color: rgba(0, 0, 0, 0)
+        border: 1px solid #000
+        width: 147px
+        &:hover
+            background: #666
+            p
+                color: #FFFFFF
+        &:focus
+            background: #666
+            p
+                color: #FFFFFF
+        &:active
+            background: #000
+            p
+                color: #FFFFFF
+    &-color-contour
+        background-color: rgba(0, 0, 0, 0)
+        border: 3px solid #F90
+        &:hover
+            border: 0
+            background: #F90
+        &:focus
+            border: 0
+            background: #F90
+        &:active
+            border: 0
+            background: #E1670E
+    &-color
+        &:hover
+            background: #FFB84D
+        &:focus
+            background: #FFB84D
+        &:active
+            background: #E1670E
+    &-mid
+        width: 175px
+        height: 60px
+    &-small
+        width: 147px
+        height: 60px
+    
+
+.text
+    color: #000
+    font-family: Montserrat
+    font-style: normal
+    line-height: normal
+    &-semibold
+        font-size: 18px
+        font-weight: 600
+        text-decoration: none
+    &-button
+        color: #FFF
+        text-align: center
+        font-size: 23px
+        font-weight: 700
+        &-small
+            font-size: 16px
+    &-bolt
+        font-size: 24px
+        font-weight: 700
+        &-hero
+            color: #fff
+            width: 790px
+            margin-bottom: 90px
+        &-about
+            width: 433px
+            color: #FFF
+            font-size: 16px
+            line-height: 32px
+    &-regular
+        font-size: 16px
+        font-weight: 400
+        line-height: 32px
+        &-about
+            width: 1235px
+            margin-top: 20px
+            margin-bottom: 50px
+        &-steps
+            cursor: pointer
+            font-size: 18px
+            &:hover
+                color: #FF9900
+            &:focus
+                border: 2px solid #F90
+            &:active
+                color: #E1670E
+    &-title
+        font-size: 48px
+        font-weight: 400
+    &-active
+        color: #E1670E
+    &-header
+        color: #333
+        font-family: Montserrat
+        font-size: 18px
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        text-decoration: none
+        &:hover
+            border-bottom: 2px solid #FF9900
+        &:focus
+            border: 2px solid #FF9900
+        &:active
+            color: #E1670E
+            border-bottom: 2px solid #E1670E
+    &-footer        
+        line-height: 36px
+        &:hover
+            color: #FF9900
+        &:focus
+            border: 2px solid #FF9900
+        &:active
+            color: #E1670E
+    
+
+.header
+    height: 100px
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10)
+
+.nav
+    height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    svg
+        cursor: pointer
+        &:hover
+            rect
+                fill: #FF9900
+            path
+                stroke: #FF9900
+        &:focus
+            border: 2px solid #FF9900
+        &:active
+            rect
+                fill: #FF9900
+            path
+                stroke: #FF9900
+            
+
+.menu
+    width: 739px
+    margin-left: 257px
+    display: flex
+    justify-content: space-between
+        
+
+.hero__content
+    height: 620px
+    background: url(../img/main-bg-1.jpg) center no-repeat
+    border-radius: 32px
+    margin-top: 50px
+    padding-left: 80px
+    padding-top: 100px
+
+.about
+    padding-top: 50px
+    margin-bottom: 100px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &-more
+        width: 868px
+        height: 622px
+        background: url(../img/about-img.jpg) center no-repeat
+        border-radius: 32px
+        display: flex
+        align-items: end
+        &__footer
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.50)
+            border-radius: 32px
+            padding: 50px
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &-info
+        width: 868px
+        height: 622px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__wrapper
+            height: 295px
+            border: 1px solid #CACACA
+            border-radius: 32px 
+            padding: 64px 58px
+            display: flex
+            img
+                margin-right: 50px
+        &__text
+            width: 452px
+
+.work
+    margin-bottom: 107px
+    &__steps
+        width: 457px
+        display: flex
+        justify-content: space-between
+        margin-top: 45px
+        margin-bottom: 45px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &-deskr
+        width: 758px
+        &__footer
+            width: 354px
+            margin-top: 18px
+            display: flex
+            justify-content: space-between
+    &-img
+        width: 870px
+        height: 460px
+        border-radius: 32px
+    
+.questions
+    margin-bottom: 100px
+    &__wrapper
+    &-content
+        position: relative
+        height: 93px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        border-top: 1px solid #000
+        &:hover
+            p
+                color: #FF9900
+            .circle
+                background-color: #FF9900
+        &:focus
+            p
+                color: #FF9900
+            .circle
+                background-color: #FF9900
+        &:active
+            .circle
+                &::before
+                    transform: rotate(315deg)
+                &::after
+                    transform: rotate(315deg)
+            
+.circle
+    position: relative
+    width: 50px
+    height: 50px
+    background-color: #CACACA
+    border-radius: 50px
+    cursor: pointer
+    &::before
+        content: ""
+        position: absolute
+        height: 1px
+        width: 30px
+        background-color: #000000
+        top: 25px
+        right: 11px
+    &::after
+        content: ""
+        position: absolute
+        height: 30px
+        width: 1px
+        background-color: #000000
+        top: 11px
+        right: 25px
+
+.footer
+    height: 594px
+    background-color: #000000
+    padding-top: 50px
+    a,p
+        color: #CACACA
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &-about
+        ul
+            margin-top: 20px
+            margin-bottom: 90px
+            padding: 0
+        &__media
+            width: 142px
+            display: flex
+            justify-content: space-between
+            svg
+                cursor: pointer
+                &:hover
+                    rect
+                        fill: #FF9900
+                    path
+                        fill: #FF9900
+                &:focus
+                    border: 2px solid #FF9900
+                &:active
+                    rect
+                        fill: #E1670E
+                    path
+                        fill: #E1670E
+    &-form
+        margin-top: 15px
+        margin-left: 111px
+        form
+            width: 570px
+            display: flex
+            flex-direction: column
+            margin-top: 37px
+            input
+                height: 60px
+                background-color: #414141
+                margin-bottom: 25px
+                padding-left: 24px
+                border: 0
+                border-radius: 16px
+
+                color: #CACACA
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 32px
+                &::placeholder
+                    color: #CACACA
+                &:hover
+                    background-color: #666666
+                &:focus
+                    background-color: #666666
+                &:active
+                    background-color: #666666
+                    &::placeholder
+                        color: #FFFFFF
+            textarea
+                background-color: #414141
+                margin-bottom: 32px
+                padding-left: 24px
+                padding-top: 14px
+                border: 0
+                border-radius: 16px
+                resize: none
+
+                color: #CACACA
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 32px
+                &::placeholder
+                    color: #CACACA
+                &:hover
+                    background-color: #666666
+                &:focus
+                    background-color: #666666
+                &:active
+                    background-color: #666666
+                    &::placeholder
+                        color: #FFFFFF
+            button
+                width: 269px
+                height: 58px
+                margin: 0 auto
+    &-text
+        width: 363px
+        margin-top: 87px
