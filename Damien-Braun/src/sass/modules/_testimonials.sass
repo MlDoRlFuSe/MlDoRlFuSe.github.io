@@ -1,0 +1,271 @@
+.testimonials
+    &__arrows
+        display: none
+    &__header
+        &-name
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            margin-bottom: 20px
+            p
+                color: var(--Grey-50, #797C86)
+                font-family: Manrope
+                font-size: 20px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+            h2
+                color: var(--Absolute-White, #FFF)
+                font-family: Manrope
+                font-size: 58px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 50px
+            border-bottom: 1px solid var(--Dark-12, #1C1C21)
+        &-reviews
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            p
+                color: var(--Grey-40, #62646C)
+                font-family: Manrope
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: 150%
+            span
+                color: var(--Grey-80, #CACACE)
+                font-family: Manrope
+                font-size: 28px
+                font-style: normal
+                font-weight: 500
+                line-height: 150%
+        &-tool
+            display: flex
+            align-items: center
+        &-arrow
+            width: 140px
+            height: 62px
+            margin-right: 30px
+            padding: 10px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                cursor: pointer
+                padding: 14px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+        &-link
+            width: 245px
+            height: 59px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+
+            color: var(--Absolute-White, #FFF)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: 150%
+            text-decoration: none
+    &__cards
+            margin-bottom: 200px
+            display: flex
+            justify-content: space-between
+
+.card
+    width: 432px
+    height: 242px
+    margin: 0px 15px
+    padding: 40px
+    border-radius: 12px
+    border: 1px solid var(--Dark-12, #1C1C21)
+    background: var(--Dark-06, #0E0E10)
+    background-image: url(../img/card-bg.png)
+    &__header
+        margin-bottom: 35px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-name
+            p
+                color: var(--Grey-90, #E4E4E6)
+                font-family: Manrope
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: 150%
+            span
+                color: var(--Grey-40, #62646C)
+                font-family: Manrope
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: 150%
+        &-links
+            width: 184px
+            height: 68px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                padding: 14px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+    &__stars
+        margin-bottom: 30px
+    &__text
+        p
+            color: var(--Grey-90, #E4E4E6)
+            font-family: Manrope
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 150%
+
+@media screen and (max-width: 1600px)
+    .testimonials
+        .container
+            padding: 0 60px
+        &__header
+            p
+                font-size: 16px
+            h2
+                font-size: 48px
+            span
+                font-size: 24px
+            &-arrow
+                width: 124px
+                height: 64px
+                svg
+                    width: 28px
+                    height: 28px
+            &-link
+                width: 193px
+                height: 49px
+                font-size: 14px
+    
+    .card
+        padding: 30px
+        p
+            font-size: 18px
+        span
+            font-size: 16px
+        &__header
+            &-links
+                width: 148px
+                height: 54px
+                svg
+                    padding: 10px
+                    width: 18px
+                    height: 18px
+        &__stars
+            margin-bottom: 20px
+            svg
+                width: 20px
+                height: 20px
+
+@media screen and (max-width: 1400px)
+    .testimonials
+        .container
+            padding: 0 50px
+        
+@media screen and (max-width: 1200px)
+    .testimonials
+        .container
+            padding: 0 40px
+        &__header
+            h2
+                font-size: 38px
+            &-arrow
+                display: none
+        &__cards
+            margin-bottom: 0px
+        &__arrows
+            width: 124px
+            height: 64px
+            margin: 0 auto
+            margin-bottom: 100px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                padding: 10px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+
+.card
+    margin-bottom: 40px
+
+@media screen and (max-width: 991px)
+    .testimonials
+        .container
+            padding: 0 30px
+
+    .card
+        padding: 20px
+        p
+            font-size: 16px
+        span
+            font-size: 14px
+        &__header
+            &-links
+                width: 128px
+                height: 48px
+                svg
+                    padding: 8px
+                    width: 16px
+                    height: 16px
+
+@media screen and (max-width: 756px)
+    .testimonials
+        .container
+            padding: 0 20px
+        &__header
+            p
+                font-size: 14px
+            h2
+                font-size: 28px
+            span
+                font-size: 20px
+            &-wrapper
+                flex-direction: column
+                align-items: flex-start
+            &-reviews
+                order: 2
+            &-link
+                order: 1
+                margin-bottom: 20px
+
+    
+        
+@media screen and (max-width: 576px)
+    .testimonials
+        .container
+            padding: 0 16px
+        
+    

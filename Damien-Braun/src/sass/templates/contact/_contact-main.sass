@@ -1,0 +1,113 @@
+.main
+    padding-top: 100px
+    border-top: 1px solid var(--Dark-12, #1C1C21)
+    &__wrapper
+        max-height: 746px
+        display: flex
+        flex-direction: column
+        background: url(../img/contact-main-desk.png) center no-repeat
+    img
+        display: none
+    &__inner
+        display: flex
+        justify-content: flex-end
+    &__links
+        margin-top: 40px
+        margin-bottom: 48px
+        width: 244px
+        height: 88px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 100px
+        border: 1px solid var(--Dark-12, #1C1C21)
+        background: var(--Dark-03, #070708)
+        svg
+            padding: 24px
+            border-radius: 100px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+    &__text
+        max-width: 1096px
+    &__footer
+        margin-top: 240px
+        display: flex
+        justify-content: flex-end
+        p
+            margin-right: 45px
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-transform: uppercase
+
+@media screen and (max-width: 1600px)
+    .main
+        padding-top: 80px
+        &__wrapper
+            background: url(../img/contact-main-lap.png) center no-repeat
+        &__links
+            margin-bottom: 20px
+            width: 212px
+            height: 76px
+            svg
+                padding: 20px
+        &__text
+            width: 780px
+        &__footer
+            margin-top: 200px
+            p
+               font-size: 14px     
+@media screen and (max-width: 1400px)
+    .main
+        padding-top: 70px
+        &__links
+            width: 60px
+            height: 60px
+            margin-top: 60px
+            margin-right: 40px
+            svg
+                display: none
+                &:first-child
+                    display: block
+        &__text
+            width: 690px
+        &__footer
+            margin-top: 220px
+            p
+                margin-right: 20px
+                width: 100px
+@media screen and (max-width: 1200px)
+    .main
+        padding-top: 60px
+        &__wrapper
+            background: none
+            padding-top: 0
+            max-height: 1300px
+            img
+                display: block
+        &__inner
+            justify-content: center
+        &__links
+            margin: 0
+            margin-bottom: 30px
+            width: 174px
+            height: 62px
+            svg
+                display: block
+                padding: 16px
+        &__text
+            width: 100%
+        &__footer
+            display: none
+@media screen and (max-width: 992px)
+    .main
+        padding-top: 50px
+
+@media screen and (max-width: 768px)
+    .main
+        padding-top: 40px
+
+@media screen and (max-width: 576px)

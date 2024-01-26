@@ -1,0 +1,86 @@
+.main
+    border-top: 1px solid var(--Dark-12, #1C1C21)
+    padding-top: 80px
+    &__wrapper
+        max-height: 784px
+        background: url(../img/service-main-desk.png) center no-repeat
+        img
+            display: none
+    &__header
+        padding-left: 300px
+        padding-top: 20px
+    &__footer
+        margin-top: 470px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0px 20px
+        p
+            margin-right: 50px
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-transform: uppercase
+
+@media screen and (max-width: 1600px)
+    .main
+        padding-top: 70px
+        &__wrapper
+            background: url(../img//service-main-lap.png) center no-repeat
+        &__header
+            padding-left: 300px
+            padding-top: 60px
+        &__footer
+            margin-top: 430px
+            svg
+                width: 100px
+                height: 100px
+            p
+                margin-right: 0
+                width: 205px
+                font-size: 14px
+
+@media screen and (max-width: 1400px)
+    .main
+        padding-top: 60px
+        &__header
+            padding-left: 200px
+        &__footer
+            padding: 0
+            justify-content: flex-end
+            margin-top: 470px
+            svg
+                display: none
+                width: 100px
+                height: 100px
+            p
+                width: 125px
+                font-size: 14px
+
+@media screen and (max-width: 1200px)
+    .main
+        padding-top: 50px
+        &__wrapper
+            background: none
+            max-height: 100%
+            img
+                width: 100%
+                margin-bottom: 30px
+                display: block
+        &__header
+            padding: 0
+        &__footer
+            display: none
+
+@media screen and (max-width: 992px)
+    .main
+        padding-top: 40px
+
+@media screen and (max-width: 768px)
+
+@media screen and (max-width: 576px)
+
+    

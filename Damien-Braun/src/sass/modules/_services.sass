@@ -1,0 +1,261 @@
+.slick-tack
+    max-height: 1500px
+    
+.services
+    &__arrows
+        width: 140px
+        height: 62px
+        margin: 0 auto
+        padding: 10px
+        display: none
+        border-radius: 100px
+        border: 1px solid var(--Dark-12, #1C1C21)
+        background: var(--Dark-03, #070708)
+        svg
+            cursor: pointer
+            padding: 14px
+            border-radius: 100px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+    &__header
+        padding-bottom: 50px
+        margin-bottom: 80px
+        border-bottom: 1px solid var(--Dark-12, #1C1C21)
+        display: flex
+        align-items: center
+        &-name
+            width: 1176px
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            p
+                color: var(--Grey-50, #797C86)
+                font-family: Manrope
+                font-size: 20px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+            h2
+                color: var(--Absolute-White, #FFF)
+                font-family: Manrope
+                font-size: 58px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+        &-arrows
+            width: 140px
+            height: 62px
+            padding: 10px
+            display: flex
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                cursor: pointer
+                padding: 14px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+        &-link
+            width: 210px
+            height: 59px
+            margin-left: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+
+            color: var(--Absolute-White, #FFF)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: 150%
+            text-decoration: none
+    &__carousel
+        width: 100%
+        display: flex
+        justify-content: center
+    &__wrapper
+        display: flex
+        margin-bottom: 200px
+        img
+            max-width: 50%
+            margin-left: 25px
+    &__content
+        max-width: 50%
+        margin-right: 25px
+        &-header
+            display: flex
+            margin-bottom: 20px
+            p
+                color: var(--Grey-50, #797C86)
+                font-family: Manrope
+                font-size: 44px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+        &-link
+            width: 130px
+            height: 66px
+            margin-left: 16px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 100px
+            background: var(--Purple-55, #4A2CED)
+            box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset
+        &-text
+            margin-bottom: 50px
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 150%
+        &-highlights
+            p
+                color: var(--Grey-80, #CACACE)
+                font-family: Manrope
+                font-size: 18px
+                font-style: normal
+                font-weight: 500
+                line-height: 150%
+            div
+                margin-bottom: 10px
+                padding: 18px 20px
+                border-radius: 12px
+                border: 1px solid var(--Dark-12, #1C1C21)
+                display: flex
+                align-items: center
+                p
+                    margin-left: 10px
+                    color: var(--Grey-70, #AFB0B6)
+                    font-weight: 400
+                    text-transform: uppercase
+
+@media screen and (max-width: 1600px)
+    .services
+        .container
+            padding: 0 40px
+
+@media screen and (max-width: 1400px)
+    .services
+        &__header
+            &-name
+                max-width: 100%
+                p
+                    font-size: 16px
+                h2
+                    font-size: 43px
+            &-arrows
+                width: 124px
+                height: 46px
+                align-items: center
+                svg
+                    padding: 10px
+            &-link
+                width: 166px
+                height: 49px
+                font-size: 12px
+        &__content
+            &-header
+                p
+                    font-size: 34px
+            &-link
+                width: 104px
+                height: 56px
+            &-text
+                p
+                    font-size: 16px
+            &-hightlights
+                p
+                    font-size: 16px
+                svg
+                    width: 30px
+                    height: 30px
+
+@media screen and (max-width: 1200px)
+    .services
+        &__arrows
+            display: flex
+            margin-bottom: 100px
+        &__header
+            padding-bottom: 30px
+            margin-bottom: 60px
+            position: relative
+            display: flex
+            justify-content: space-between
+            &-name
+                width: 500px
+                p
+                    font-size: 14px
+                h2
+                    font-size: 35px
+            &-link
+                text-align: center
+            &-arrows
+                display: none
+                svg
+                    padding: 10px
+            &-link
+                width: 166px
+                height: 49px
+                font-size: 12px
+        &__content
+            margin-right: 0
+            max-width: 773px
+            margin-bottom: 40px    
+        &__wrapper
+            flex-direction: column
+            align-items: center
+            margin-bottom: 0
+            img
+                margin-bottom: 40px
+                margin-left: 0
+                max-width: 100%
+                order: -1
+
+@media screen and (max-width: 991px)
+    .services
+        .container
+            padding: 0 30px
+        &__header
+            &-name
+                h2
+                    font-size: 28px
+
+@media screen and (max-width: 768px)
+    .services
+        .container
+            padding: 0 16px
+        &__header
+            padding-bottom: 20px
+            margin-bottom: 40px
+            flex-direction: column
+            align-items: flex-start
+            &-link
+                margin-top: 20px
+                margin-left: 0
+                font-size: 14px
+        &__content
+            &-header
+                p
+                    font-size: 28px
+            &-link
+                width: 80px
+                height: 48px
+            &-text
+                p
+                    font-size: 14px
+            &-hightlights
+                p
+                    font-size: 14px
+                svg
+                    width: 30px
+                    height: 30px

@@ -1,0 +1,58 @@
+.photo
+    &__wrapper
+        padding: 80px 0px
+        border-top: 1px solid var(--Dark-12, #1C1C21)
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 50px
+    &__arrows
+        width: 160px
+        height: 82px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 100px
+        border: 1px solid var(--Dark-12, #1C1C21)
+        background: var(--Dark-03, #070708)
+        svg
+            cursor: pointer
+            padding: 14px
+            border-radius: 100px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+            &:hover
+                background: #0e0e19
+            &:active
+                background: #000000
+        &-bottom
+            display: none
+
+@media screen and (max-width: 1600px)
+    .photo
+        &__arrows
+            width: 124px
+            height: 64px
+            svg
+                padding: 10px
+
+@media screen and (max-width: 1400px)
+
+@media screen and (max-width: 1200px)
+    .photo
+        &__arrows
+            display: none
+            &-bottom
+                display: flex
+                margin: 0 auto
+                margin-top: 50px
+        &__wrapper
+            padding: 60px
+@media screen and (max-width: 992px)
+
+@media screen and (max-width: 768px)
+    .photo
+        &__wrapper
+            padding: 40px
+@media screen and (max-width: 576px)

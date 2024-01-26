@@ -1,0 +1,59 @@
+.slick-initialized 
+    .slick-slide
+        display: flex
+.testimonials
+    .slick-initialized 
+        .slick-slide
+            display: block
+    
+body
+    background-color: black
+
+section
+    margin-bottom: 200px
+    
+.container
+    max-width: 1596px
+    margin: 0 auto
+
+
+
+@media screen and (max-width: 1600px)
+    .container
+        padding: 0 60px
+    section
+        margin-bottom: 150px
+
+@media screen and (max-width: 1400px)
+    .container
+        padding: 0 50px
+
+@media screen and (max-width: 1200px)
+    .container
+        padding: 0 40px
+    section
+        margin-bottom: 120px
+
+@media screen and (max-width: 992px)
+    .container
+        padding: 0 30px
+
+@media screen and (max-width: 768px)
+    .container
+        padding: 0 20px
+    section
+        margin-bottom: 80px
+
+@media screen and (max-width: 576px)
+    .container
+        padding: 0 16px
+
+@import ./modules/_header
+@import ./modules/_title
+@import ./templates/service/_service-main
+@import ./templates/service/_service-photo
+@import ./modules/faqs
+@import ./modules/_footer
+
+.header__link-active
+    border-radius: 0px 12px 0px 0px

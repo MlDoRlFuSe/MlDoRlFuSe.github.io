@@ -1,0 +1,127 @@
+.main
+    padding-top: 100px
+    border-top: 1px solid var(--Dark-12, #1C1C21)
+    &__wrapper
+        height: 784px
+        background: url(../img/portfolio-main-desk.png) center no-repeat
+        display: flex
+        flex-direction: column
+        margin-bottom: 80px
+        img
+            display: none
+    &__inner
+        margin-top: 50px
+    .subtitle
+        p
+            width: 1096px
+            margin-top: 30px
+
+    &__footer
+        margin-top: 360px
+        padding: 0 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+            margin-right: 30px
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-transform: uppercase
+    &__brands
+        p
+            margin-bottom: 14px
+            color: var(--Grey-50, #797C86)
+            text-align: center
+            font-family: Manrope
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-transform: uppercase
+        &-wrapper
+            overflow: auto
+            padding: 30px 0px
+            border-top: 1px solid var(--Dark-12, #1C1C21)
+            border-bottom: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-06, #0E0E10)
+            .container
+                width: 1920px          
+                display: flex
+                justify-content: space-between
+                user-select: none
+                align-items: center
+                svg
+                    max-height: 50px
+        &-inner
+            display: flex
+            align-items: center
+            svg
+                max-height: 50px
+                &:first-child
+                    margin-right: 10px
+
+@media screen and (max-width: 1600px)
+    .main
+        padding-top: 80px
+        &__wrapper
+            background: url(../img/portfolio-main-lap.png) center no-repeat
+            margin-bottom: 70px
+            .subtitle
+                p
+                    width: 903px
+        &__footer
+            margin-top: 380px
+            svg
+                width: 100px
+                height: 100px
+            p
+                margin-right: 0
+
+@media screen and (max-width: 1400px)
+    .main
+        padding-top: 70px
+        &__wrapper
+            margin-bottom: 60px
+            .subtitle
+                p
+                    width: 813px
+        &__footer
+            margin-top: 420px
+            justify-content: flex-end
+            svg
+                display: none
+            p
+                width: 130px
+
+@media screen and (max-width: 1200px)
+    .main
+        padding-top: 60px
+        &__wrapper
+            background: none
+            height: 100%
+            margin-bottom: 50px
+            img
+                display: block
+            .subtitle
+                p
+                    width: 100%
+        &__footer
+            display: none
+            margin: 0
+        &__brands
+            &-wrapper
+                padding: 20px 0px
+
+@media screen and (max-width: 992px)
+    .main
+        &__wrapper
+            margin-bottom: 40px
+
+@media screen and (max-width: 768px)
+
+
+@media screen and (max-width: 576px)

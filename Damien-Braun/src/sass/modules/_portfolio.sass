@@ -1,0 +1,222 @@
+.portfolio
+    &__arrows
+        display: none
+    &__header
+        display: flex
+        align-items: center
+        margin-bottom: 80px
+        padding-bottom: 50px
+        border-bottom: 1px solid var(--Dark-12, #1C1C21)
+        &-wrapper
+            width: 1197px
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            p
+                color: var(--Grey-50, #797C86)
+                font-family: Manrope
+                font-size: 20px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+            h2
+                color: var(--Absolute-White, #FFF)
+                font-family: Manrope
+                font-size: 58px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                text-transform: uppercase
+        &-arrow
+            width: 140px
+            height: 62px
+            display: flex
+            padding: 10px
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                cursor: pointer
+                padding: 14px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+        &-link
+            width: 190px
+            height: 59px
+            margin-left: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 8px
+            border: 1px solid #2F2F37
+            background: var(--Dark-12, #1C1C21)
+
+            color: var(--Absolute-White, #FFF)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: 150%
+            text-decoration: none
+    &__content
+        margin-bottom: 200px
+        display: flex
+        justify-content: space-between
+        &-item
+            margin: 0 25px
+            display: flex
+            flex-direction: column
+        &-wrapper
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-name
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            p
+                color: var(--Grey-80, #CACACE)
+                font-family: Manrope
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+            span
+                color: var(--Grey-50, #797C86)
+                font-family: Manrope
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+        &-link
+            width: 159px
+            height: 37px
+            border-bottom: 1px solid var(--Dark-20, #2F2F37)
+            display: flex
+            align-items: center
+            text-decoration: none
+            p
+                color: var(--Grey-95, #F2F2F3)
+                font-family: Manrope
+                font-size: 18px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-transform: uppercase
+            svg
+                margin-left: 10px
+
+@media screen and (max-width: 1600px)
+    .portfolio
+        .container
+            padding: 0 60px
+        &__header
+            &-wrapper
+                h2
+                    font-size: 53px
+
+@media screen and (max-width: 1400px)
+    .portfolio
+        .container
+            padding: 0 50px
+        &__header
+            padding-bottom: 40px
+            margin-bottom: 60px
+            &-wrapper
+                max-width: 950px
+                p
+                    font-size: 16px
+                h2
+                    font-size: 43px
+            &-arrow
+                width: 124px
+                height: 54px
+                align-items: center
+                svg
+                    padding: 10px
+            &-link
+                min-width: 150px
+                height: 49px
+        &__content
+            margin-bottom: 100px
+            &-item
+                margin: 0 15px
+            &-name
+                p
+                    font-size: 18px
+                span
+                    font-size: 16px
+            &-link
+                width: 130px
+                justify-content: flex-end
+                p
+                    font-size: 14px
+                svg
+                    width: 20px
+                    height: 20px
+
+@media screen and (max-width: 1200px)
+    .portfolio
+        .container
+            padding: 0 40px
+        &__header
+            &-arrow
+                display: none
+        &__content
+            margin-bottom: 40px
+        &__arrows
+            width: 124px
+            height: 64px
+            margin: 0 auto
+            margin-bottom: 80px    
+            display: flex
+            justify-content: space-around
+            align-items: center
+            border-radius: 100px
+            border: 1px solid var(--Dark-12, #1C1C21)
+            background: var(--Dark-03, #070708)
+            svg
+                width: 28px
+                height: 28px
+                padding: 10px
+                border-radius: 100px
+                border: 1px solid #2F2F37
+                background: var(--Dark-12, #1C1C21)
+
+@media screen and (max-width: 992px)
+    .portfolio
+        .container
+            padding: 0 30px
+        &__header
+            padding-bottom: 30px
+            margin-bottom: 50px
+            &-wrapper
+                max-width: 950px
+                p
+                    font-size: 14px
+                h2
+                    font-size: 28px
+            &-link
+                font-size: 14px
+
+@media screen and (max-width: 768px)
+    .portfolio
+        .container
+            padding: 0 20px
+        &__header
+            flex-direction: column
+            align-items: flex-start
+            &-wrapper
+                max-width: 100%
+            &-link
+                margin-top: 20px
+                margin-left: 0
+        &__content
+            &-name
+                p
+                    font-size: 16px
+                span
+                    font-size: 14px

@@ -1,0 +1,89 @@
+.journey
+    .title
+        padding-bottom: 50px
+        margin-bottom: 80px
+        border-bottom: 1px solid var(--Dark-12, #1C1C21)
+
+.timeline
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+    &__card
+        width: 41%
+        margin: 15px
+        padding: 50px
+        background: url(../img/card-bg.png) center no-repeat
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        border-radius: 12px
+        border: 1px solid var(--Dark-12, #1C1C21)
+        background: var(--Dark-06, #0E0E10)
+        p
+            margin-bottom: 20px
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 44px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            text-transform: uppercase
+        span
+            color: var(--Grey-50, #797C86)
+            font-family: Manrope
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 150%
+
+@media screen and (max-width: 1600px)
+    .journey
+        .title
+            padding-bottom: 40px
+            margin-bottom: 60px
+    .timeline
+        &__card
+            margin: 10px
+            padding: 40px
+            p
+                font-size: 34px
+            span
+                font-size: 16px
+
+@media screen and (max-width: 1400px)
+    .timeline
+        &__card
+            margin: 9px
+            padding: 35px
+
+@media screen and (max-width: 1200px)
+    .timeline
+        &__card
+            width: 100%
+            margin: 0
+            margin-bottom: 20px
+            padding: 24px
+            p
+                font-size: 29px
+            span
+                font-size: 15px
+
+@media screen and (max-width: 992px)
+   
+
+@media screen and (max-width: 768px)
+    .journey
+        .title
+            padding-bottom: 20px
+            margin-bottom: 40px
+    
+    .timeline
+        &__card
+            p
+                font-size: 24px
+            span
+                font-size: 13px
+
+@media screen and (max-width: 576px)
+    .container
+        padding: 0 16px
