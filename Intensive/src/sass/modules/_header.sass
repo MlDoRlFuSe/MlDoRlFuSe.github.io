@@ -1,0 +1,41 @@
+.header
+    background: #4C3D74
+    padding-top: 105px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__burger
+        display: none
+        cursor: pointer
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 533px
+    &__mob-nav
+        display: none
+    &__inner
+        display: flex
+        flex-direction: column
+        display: none
+        a
+            padding: 20px 0
+            width: 100%
+            text-align: center
+
+@media screen and (max-width: 992px)
+    .header
+        &__nav
+            width: 460px
+
+@media screen and (max-width: 768px)
+    .header
+        padding-top: 90px
+        &__nav
+            display: none
+        &__burger
+            display: block
+        &__inner
+            display: flex
+
+    

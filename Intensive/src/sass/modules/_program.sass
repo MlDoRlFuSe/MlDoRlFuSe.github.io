@@ -1,0 +1,109 @@
+.program
+    padding-top: 160px
+    h2
+        text-align: center
+        color: #504178
+    &__wrapper
+        margin-top: 45px
+        border-top: 2px solid #4C3D74
+    &__item
+        border-bottom: 2px solid #4C3D74
+        height: 55px
+        overflow: hidden
+        transition: all 1s
+        &-active
+            height: 100px
+    &__content
+        padding: 15px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        p
+            width: 90%
+            transition: all 1s
+        svg
+            width: 20px
+            height: 20px
+            transition: all 1s
+        &:hover
+            svg
+                transform: scale(1.2)
+            p
+                color: #4600ff
+    &__footer
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+    &__inner
+        display: flex
+        align-items: center
+        height: 60px
+        .text-subheader
+            color: #4C3D74
+            margin-left: 40px
+
+
+@media screen and (max-width: 992px)
+    .program
+        &__item
+            &:nth-child(5)
+                height: 75px
+            &:nth-child(6)
+                height: 75px
+            &:nth-child(8)
+                height: 75px
+            &-active
+                height: 125px
+                &:nth-child(5)
+                    height: 150px
+                &:nth-child(6)
+                    height: 150px
+                &:nth-child(8)
+                    height: 150px
+        &__footer
+            flex-direction: column
+            align-items: center
+        &__inner
+            height: 100%
+            flex-direction: column
+            align-items: center
+            .text-subheader
+                margin-left: 0
+                text-align: center
+                order: -1
+            .button
+                margin: 40px 0
+
+@media screen and (max-width: 576px)
+    .program
+        &__item
+            &:nth-child(2)
+                height: 80px
+            &:nth-child(3)
+                height: 80px
+            &:nth-child(5)
+                height: 100px
+            &:nth-child(6)
+                height: 130px
+            &:nth-child(7)
+                height: 80px
+            &:nth-child(8)
+                height: 110px
+            &:nth-child(9)
+                height: 80px
+            &-active
+                &:nth-child(2)
+                    height: 150px
+                &:nth-child(3)
+                    height: 150px
+                &:nth-child(5)
+                    height: 180px
+                &:nth-child(6)
+                    height: 200px
+                &:nth-child(7)
+                    height: 150px
+                &:nth-child(8)
+                    height: 180px
+                &:nth-child(9)
+                    height: 150px

@@ -1,0 +1,45 @@
+.expectation
+    background: #4C3D74
+    padding-top: 168px
+    h2
+        text-align: center
+    &__wrapper
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+    &__inner
+        margin-top: 45px
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 30.5%
+        display: flex
+        align-items: center
+        img
+            width: 59px
+            height: 59px
+            margin-right: 23px
+
+@media screen and (max-width: 992px)
+    .expectation
+        padding-top: 90px
+        h2
+            margin-bottom: 20px
+        &__inner
+            margin-top: 0
+            flex-direction: column
+            width: 100%
+        &__item
+            margin: 0 auto
+            margin-top: 15px
+            width: 531px
+            img
+                width: 46px
+                height: 46px
+                margin-right: 9px
+
+@media screen and (max-width: 576px)
+     .expectation
+        &__item
+            width: 300px
+            margin-top: 30px

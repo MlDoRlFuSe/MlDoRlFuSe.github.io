@@ -1,0 +1,65 @@
+@font-face 
+  font-family: "Futura"
+  src: url("../fonts/FuturaNewBold-Reg.ttf") format("truetype"),url("./fonts/FuturaNewBold-Reg.woff") format("woff"),url("./fonts/FuturaNewBold-Reg.woff2") format("woff2"),url("./fonts/FuturaNewBold-Reg.otf") format("opentype")
+  font-weight: 700
+
+@font-face 
+  font-family: "Futura"
+  src: url("../fonts/FuturaNewMedium-Reg.ttf") format("truetype"),url("./fonts/FuturaNewMedium-Reg.woff") format("woff"),url("./fonts/FuturaNewMedium-Reg.woff2") format("woff2"),url("./fonts/FuturaNewMedium-Reg.otf") format("opentype")
+  font-weight: 500
+
+h1,h2,h3,h4,h5,h6,a,p,span
+    color: #FFF
+    font-family: Futura
+    font-style: normal
+    text-decoration: none
+a
+    transition: all .5s
+    &:hover
+            transform: scale(1.1)
+.text
+    &-nav
+        font-size: 14px
+        font-weight: 700
+        line-height: normal
+    &-header
+        font-size: 50px
+        font-weight: 700
+        line-height: normal
+    &-subheader
+        font-size: 20px
+        font-weight: 700
+        line-height: normal
+    &-button
+        font-size: 16px
+        font-weight: 700
+        line-height: normal
+    &-slide
+        color: #4C3D74
+        font-size: 18px
+        font-weight: 500
+        line-height: 150%
+    &-medium
+        font-size: 16px
+        font-weight: 500
+        line-height: 150%
+    &-bold
+        font-size: 16px
+        font-weight: 700
+        line-height: 150%
+
+        
+@media screen and (max-width: 1200px)
+    .text
+        &-header
+            font-size: 45px
+
+@media screen and (max-width: 992px)
+    .text
+        &-nav
+            font-size: 12px
+        &-header
+            font-size: 30px
+        &-subheader
+            font-size: 16px
+    

@@ -1,0 +1,89 @@
+.price
+    padding-top: 160px
+    padding-bottom: 180px
+    background: #4C3D74
+    h2
+        text-align: center
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 45px
+    &__card
+        width: 30%
+        padding: 50px 35px
+        border-radius: 30px
+        border: 3px solid #4C3D74
+        position: relative
+        background: #F2EEF7
+        img
+            position: absolute
+            right: -50px
+            top: -50px
+        .button
+            position: absolute
+            bottom: -25px
+            left: 15%
+    &__row
+        display: flex
+        svg
+            width: 17px
+            height: 17px
+            margin-top: 3px
+            margin-right: 8px
+        p
+            color: #4C3D74
+            width: 90%
+    &__inner
+        margin-top: 11px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p,span
+            color: #4C3D74
+    &__footer
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+            max-width: 50%
+        .button
+            p
+                max-width: 100%
+
+@media screen and (max-width: 1200px)
+    .price
+        &__card
+            .button
+                left: 5%
+            
+@media screen and (max-width: 992px)
+    .price
+        padding-top: 80px
+        padding-bottom: 80px
+        &__wrapper
+            flex-direction: column
+        &__card
+            width: 100%
+            margin-bottom: 70px
+            .button
+                left: 35%
+            img
+                right: -33px
+        &__footer
+            margin-top: 0
+            flex-direction: column
+            img
+                margin-bottom: 25px
+            .button
+                margin-top: 25px
+                margin-bottom: 25px
+            p
+                text-align: center
+                max-width: 100%
+
+@media screen and (max-width: 576px)
+    .price
+        &__card
+            .button
+                left: 10%

@@ -1,0 +1,30 @@
+.footer
+    padding-top: 125px
+    padding-bottom: 125px
+    background: #251933
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__column
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &:nth-child(2)
+            align-items: center
+        &:nth-child(3)
+            align-items: flex-end
+        a
+            text-decoration: underline
+
+@media screen and (max-width: 768px)
+    .footer
+        padding-top: 80px
+        padding-bottom: 80px
+        &__wrapper
+            flex-direction: column
+        &__column
+            margin: 10px 0
+            &:nth-child(1)
+                align-items: center
+            &:nth-child(3)
+                align-items: center
